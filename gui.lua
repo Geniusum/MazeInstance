@@ -11,6 +11,8 @@ function load_wallpaper_1()
     paintutils.drawImage(wallpaper_1, 1, 1)
 end
 
+load_wallpaper_1()
+
 while true do
     i=1
 end
