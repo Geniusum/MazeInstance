@@ -4,7 +4,7 @@
 
 -- Init wallpapers
 
-wallpaper_1 = paintutils.loadImage("./assets/wallpaper_1.nfp")
+wallpaper_1 = paintutils.loadImage("MazeInstance/assets/wallpaper_1.nfp")
 
 function load_wallpaper_1()
     term.setCursorPos(1, 1)
