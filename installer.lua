@@ -30,7 +30,9 @@ end
 -- Now rget is ready, go install the OS !
 
 print("[INFO] Installation of OS...")
-    
+print("")
+
+shell.run("rget Geniusum MazeInstance OS startup.lua startup.lua")
 shell.run("mkdir MazeInstance")    
 shell.run("cd MazeInstance")
 shell.run("mkdir system lib update files assets")
@@ -47,4 +49,10 @@ shell.run("cd ..")
 shell.run("cd system")
 shell.run("../../rget.lua Geniusum MazeInstance OS gui.lua gui.lua")
 
-print("[INFO] Installation completed...")
+print("")
+print("[INFO] Installation completed !")
+print("")
+sleep(0.8)
+
+print("[INFO] Running OS...")
+shell.run("system/gui.lua")
