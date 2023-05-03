@@ -48,6 +48,7 @@ shell.run("../../rget.lua Geniusum MazeInstance OS wallpaper_1 wallpaper_1.nfp")
 shell.run("cd ..")
 shell.run("cd system")
 shell.run("../../rget.lua Geniusum MazeInstance OS gui.lua gui.lua")
+shell.run("../../rget.lua Geniusum MazeInstance OS start.lua start.lua")
 
 print("")
 print("[INFO] Installation completed !")
@@ -55,4 +56,4 @@ print("")
 sleep(0.8)
 
 print("[INFO] Running OS...")
-shell.run("system/gui.lua")
+shell.run("system/start.lua")
