@@ -45,6 +45,6 @@ shell.run("cd assets")
 shell.run("../../rget.lua Geniusum MazeInstance OS wallpaper_1 wallpaper_1.nfp")
 shell.run("cd ..")
 shell.run("cd system")
-shell.run("rget Geniusum MazeInstance OS gui.lua gui.lua")
+shell.run("../../rget.lua Geniusum MazeInstance OS gui.lua gui.lua")
 
 print("[INFO] Installation completed...")
