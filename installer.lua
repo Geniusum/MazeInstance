@@ -38,5 +38,7 @@ shell.run("cd update")
 shell.run("copy ../../rget.lua .")
 shell.run("rget Geniusum MazeInstance OS updater.lua updater.lua")
 shell.run("cd ..")
+shell.run("cd lib")
+shell.run("../../rget.lua Geniusum MazeInstance OS lib-const-var.lua const_var.lua")
 
 print("[INFO] Installation completed...")
