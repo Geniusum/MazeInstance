@@ -29,8 +29,14 @@ end
 
 -- Now rget is ready, go install the OS !
 
-print("[INFO] Installation of OS :")
+print("[INFO] Installation of OS...")
     
-shell.run("mkdir MazeInstance")
-    
+shell.run("mkdir MazeInstance")    
 shell.run("cd MazeInstance")
+shell.run("mkdir system lib update files assets")
+shell.run("cd update")
+shell.run("copy ../../rget .")
+shell.run("rget Geniusum MazeInstance OS updater.lua updater.lua")
+shell.run("cd ..")
+
+print("[INFO] Installation completed...")
