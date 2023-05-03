@@ -1,2 +1,6 @@
 shell.run("cd MazeInstance/update/")
 shell.run("delete updater.lua")
+shell.run("rget Geniusum MazeInstance OS updater.lua updater.lua")
+print("OS Updater program updated !")
+sleep(0.3)
+print("OS is starting...")
