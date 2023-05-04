@@ -15,24 +15,24 @@ load_wallpaper_1()
 
 -- Init buttons
 
-local button = {}
-button.x = 1
-button.y = 18
-button.width = 3
-button.height = 1
-button.color = colors.yellow
-button.text = "MI"
-button.textColor = colors.black
+local button_menu = {}
+button_menu.x = 1
+button_menu.y = 19
+button_menu.width = 4
+button_menu.height = 1
+button_menu.color = colors.orange
+button_menu.text = " MI"
+button_menu.textColor = colors.white
 
 function drawButton()
-  paintutils.drawFilledBox(button.x, button.y, button.x + button.width, button.y + button.height, button.color)
-  term.setCursorPos(button.x + (button.width - string.len(button.text)) / 2, button.y + button.height / 2)
-  term.setTextColor(button.textColor)
-  term.write(button.text)
+  paintutils.drawFilledBox(button_menu.x, button_menu.y, button_menu.x + button_menu.width, button_menu.y + button_menu.height, button_menu.color)
+  term.setCursorPos(button_menu.x + (button_menu.width - string.len(button_menu.text)) / 2, button_menu.y + button_menu.height / 2)
+  term.setTextColor(button_menu.textColor)
+  term.write(button_menu.text)
 end
 
 function clickHandler(event, x, y)
-  if x >= button.x and x <= button.x + button.width - 1 and y == button.y + button.height - 1 then
+  if x >= button_menu.x and x <= button_menu.x + button_menu.width - 1 and y == button_menu.y + button_menu.height - 1 then
     -- Ajoutez ici le code à exécuter lorsque le bouton est cliqué
     print("Le bouton a été cliqué !")
   end
