@@ -50,16 +50,16 @@ end
 function main()
   showDesktop()
   while true do
-    local event, p1, p2, p3, p4, p5 = os.pullEvent()
-    if event == "mouse_click" then
-      clickHandler(event, p2, p3)
-    end
     local time = os.time()
 
     local formattedTime = string.format("%02d:%02d", math.floor(time / 3600) % 12, math.floor(time / 60) % 60)
     term.setCursorPos(46, 19)
     term.setTextColor(colors.white)
     print(formattedTime)
+    local event, p1, p2, p3, p4, p5 = os.pullEvent()
+    if event == "mouse_click" then
+      clickHandler(event, p2, p3)
+    end
   end
 end
 
