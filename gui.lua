@@ -43,7 +43,7 @@ function showDesktop()
 
   local formattedTime = string.format("%02d:%02d", math.floor(time / 3600) % 12, math.floor(time / 60) % 60)
   term.setCursorPos(46, 19)
-  term.setTextColor(colors.white)
+  term.setTextColor(colors.black)
   term.write(formattedTime)
 end
 
