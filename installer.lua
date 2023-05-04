@@ -45,6 +45,7 @@ shell.run("../../rget.lua Geniusum MazeInstance OS lib-const-var.lua const_var.l
 shell.run("cd ..")
 shell.run("cd assets")
 shell.run("../../rget.lua Geniusum MazeInstance OS wallpaper_1 wallpaper_1.nfp")
+shell.run("../../rget.lua Geniusum MazeInstance OS icon_1 icon_1.nfp")
 shell.run("cd ..")
 shell.run("cd system")
 shell.run("../../rget.lua Geniusum MazeInstance OS gui.lua gui.lua")
