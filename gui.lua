@@ -38,6 +38,13 @@ function showDesktop()
   term.write(button_menu.text)
     
   paintutils.drawFilledBox(bottom_bar.x, bottom_bar.y, bottom_bar.x + bottom_bar.width, bottom_bar.y + bottom_bar.height, bottom_bar.color)
+  
+  local time = os.time()
+
+  local formattedTime = string.format("%02d:%02d", math.floor(time / 3600) % 12, math.floor(time / 60) % 60)
+  term.setCursorPos(46, 19)
+  term.setTextColor(colors.white)
+  term.write(formattedTime)
 end
 
 function clickHandler(event, x, y)
@@ -50,12 +57,7 @@ end
 function main()
   showDesktop()
   while true do
-    local time = os.time()
-
-    local formattedTime = string.format("%02d:%02d", math.floor(time / 3600) % 12, math.floor(time / 60) % 60)
-    term.setCursorPos(46, 19)
-    term.setTextColor(colors.white)
-    print(formattedTime)
+    showDesktop()
     local event, p1, p2, p3, p4, p5 = os.pullEvent()
     if event == "mouse_click" then
       clickHandler(event, p2, p3)
