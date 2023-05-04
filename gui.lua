@@ -24,11 +24,20 @@ button_menu.color = colors.orange
 button_menu.text = " MI"
 button_menu.textColor = colors.white
 
+local bottom_bar = {}
+bottom_bar.x = 4
+bottom_bar.y = 19
+bottom_bar.width = 47
+bottom_bar.height = 1
+bottom_bar.color = colors.yellow
+
 function drawButton()
   paintutils.drawFilledBox(button_menu.x, button_menu.y, button_menu.x + button_menu.width, button_menu.y + button_menu.height, button_menu.color)
   term.setCursorPos(button_menu.x + (button_menu.width - string.len(button_menu.text)) / 2, button_menu.y + button_menu.height / 2)
   term.setTextColor(button_menu.textColor)
   term.write(button_menu.text)
+    
+  paintutils.drawFilledBox(bottom_bar.x, bottom_bar.y, bottom_bar.x + bottom_bar.width, bottom_bar.y + bottom_bar.height, bottom_bar.color)
 end
 
 function clickHandler(event, x, y)
