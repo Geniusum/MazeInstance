@@ -12,6 +12,11 @@ function load_wallpaper_1()
     paintutils.drawImage(wallpaper_1, 1, 1)
 end
 
+function load_icon_1()
+    term.setCursorPos(1, 1)
+    paintutils.drawImage(icon_1, 1, 1)
+end
+
 load_wallpaper_1()
 
 -- Init buttons
