@@ -49,6 +49,7 @@ shell.run("cd ..")
 shell.run("cd system")
 shell.run("../../rget.lua Geniusum MazeInstance OS gui.lua gui.lua")
 shell.run("../../rget.lua Geniusum MazeInstance OS start.lua start.lua")
+shell.run("cd ..")
 
 print("")
 print("[INFO] Installation completed !")
