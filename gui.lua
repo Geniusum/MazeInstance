@@ -25,9 +25,9 @@ button_menu.text = " MI"
 button_menu.textColor = colors.white
 
 local bottom_bar = {}
-bottom_bar.x = 4
+bottom_bar.x = 5
 bottom_bar.y = 19
-bottom_bar.width = 47
+bottom_bar.width = 46
 bottom_bar.height = 1
 bottom_bar.color = colors.yellow
 
