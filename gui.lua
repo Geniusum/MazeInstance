@@ -18,6 +18,7 @@ function load_icon_1()
 end
 
 load_wallpaper_1()
+load_icon_1()
 
 -- Init buttons
 
